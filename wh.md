@@ -11,3 +11,4 @@
 #### git config --global user.email "邮箱名"
 #### git config --global user.name "用户名"
 #### git push -u origin master 发送到服务器
+![wanghong](https://upload-images.jianshu.io/upload_images/14466054-45eba05cdfd45232.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
