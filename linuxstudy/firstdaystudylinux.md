@@ -29,8 +29,8 @@
 ###### Windows虚拟化技术开启
 ![图片2.png](https://upload-images.jianshu.io/upload_images/14466054-8a9e91b9b0eaa45a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 遇到上诉问题的解决方法:
-* 首先确保自己的电脑主机开启了支持虚拟化技术，具体实现根据自己笔记本的型号配置
-* 按住F2键进入Bios设置界面，首先看到的是main（概要）选项卡
+* 首先确保自己的电脑主机开启了支持虚拟化技术,具体实现根据自己笔记本的型号配置
+* 按住F2键进入Bios设置界面，首先看到的是main(概要)选项卡
 * 选择进入Advanced高级—CPU Configuration  处理器设置
 * 找到Intel Virtualization Technology英特尔虚拟化技术选项
 * 设置为Enabled开启，再F10保存退出即可
@@ -110,12 +110,12 @@ PING 192.168.4.110 (192.168.4.110) 56(84) bytes of data.
 
 ###### 设置SELinux
 * 查看SElinux,可能返回的结果有三种
-* Enforcing:强制模式，代表记录安全警告且阻止可疑行为
-* Permissive:宽容模式，代表记录安全警告但不阻止可疑行为
+* Enforcing:强制模式,代表记录安全警告且阻止可疑行为
+* Permissive:宽容模式,代表记录安全警告但不阻止可疑行为
 * Disable:关闭
 * 当前有效
 setenforce	[ Enforcing \ Permissive\ 1\ 0 ]
-该命令可以立即改变SELinux运行状态，在Enforcing 和Permissive  之间切换，关机重启之后失效.
+该命令可以立即改变SELinux运行状态,在Enforcing 和Permissive  之间切换,关机重启之后失效.
 * 永久有效
 修改配置文件/etc/selinux/config,将SELINUX=enforcing修改为SELINUX=disabled重启生效
 
@@ -130,11 +130,11 @@ setenforce	[ Enforcing \ Permissive\ 1\ 0 ]
 * ls：显示文件和目录列表(list)
 * 常用参数:
 * -l (long)
-* -a(all)         注意隐藏文件、特殊目录.和..   
+* -a(all)         注意隐藏文件 特殊目录.和..   
 * -t	(time)
 
 ###### Linux的命令帮助
-* 内部命令：属于Shell解析器的一部分
+* 内部命令:属于Shell解析器的一部分
 cd 切换目录(change directory)
 pwd 显示当前工作目录(print working directory)
 help 帮助
