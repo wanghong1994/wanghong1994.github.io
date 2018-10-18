@@ -5,6 +5,7 @@
 	- [GitHub](https://wanghong1994.github.io/wh)
 	- git命令
 - linux
-	- [linux study](https://wanghong1994.github.io/linuxstudy/firstdaystudylinux)
+	- [linux first day study](https://wanghong1994.github.io/linuxstudy/firstdaystudylinux)
+	- [linux second day study](https://wanghong1994.github.io/linuxstudy/secondday)
 - hadoop
 ## hello world.haha
