@@ -1,4 +1,6 @@
-﻿## vi文本编辑器
+﻿## The Second Day Study Linux
+
+#### vi文本编辑器
 - vim是vi的增强版
 	- 插入命令
 ![插入命令](https://upload-images.jianshu.io/upload_images/14467627-014d81926a08de40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -71,7 +73,7 @@ R:从光标所在处开始替换字符，按esc结束
 			- 在所有可视模式中,d和x键可以用删除选定的内容
 
 			- 在可视块模式中,选中所需行,按I键输入内容,之后按两次esc键,可在所有选定行光标处添加同样的内容.
-## 用户管理命令
+#### 用户管理命令
 - 用户管理命令
 ![用户管理命令](https://upload-images.jianshu.io/upload_images/14467627-5e5b44bf245d4f55.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	- 例子含义:创建用户id为888,所属组为users,且还指定了组sys,root的用户zhangsan,其描述为"hr zhang"用户,设置密码
@@ -98,7 +100,7 @@ R:从光标所在处开始替换字符，按esc结束
 		- 
 -r 删除账号时同时删除目录(remove)[把用户的宿主目录一并删除]
 
-## 组命令管理
+#### 组命令管理
 - 添加组：groupadd
 
 	- -g 指定gid
@@ -142,7 +144,7 @@ R:从光标所在处开始替换字符，按esc结束
 显示用户所属组
 
 	- 命令格式: groups	[用户名]
-## 文件目录权限管理
+#### 文件目录权限管理
 - 权限
 	- 读(r): 读取文件的内容;列出目录里的对象
 	- 
