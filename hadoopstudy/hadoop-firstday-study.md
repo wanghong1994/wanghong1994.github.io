@@ -28,7 +28,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 [root@wang1 ~]$ source /etc/profile
 ```
 
-- 解压并配置Hadoop
+#### 解压并配置Hadoop
 将压缩包放到hadoop1下
 
 解压
@@ -57,7 +57,7 @@ PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 ```
 
 
-- 测试案例
+#### 测试案例
 默认情况下,Hadoop已经被配置到单节点模式,因此不需要在做额外的配置.
 
 ```
