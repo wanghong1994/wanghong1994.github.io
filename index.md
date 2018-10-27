@@ -2,8 +2,7 @@
 ## 点击下面的链接将进入对应博客
 - git
 	- [github blog bulid](https://wanghong1994.github.io/git/blog)
-	- [GitHub](https://wanghong1994.github.io/wh)
-	- git命令
+	- [git命令](https://wanghong1994.github.io/git/git)
 - linux
 	- [linux first day study](https://wanghong1994.github.io/linuxstudy/firstdaystudylinux)
 	- [linux second day study](https://wanghong1994.github.io/linuxstudy/secondday)
