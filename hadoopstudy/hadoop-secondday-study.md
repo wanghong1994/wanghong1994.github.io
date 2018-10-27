@@ -10,6 +10,7 @@
 #### 4解压安装jdk.
 - 解压：tar -zxf jdk-8u181-linux-x64.tar.gz
 - 查看路径:
+
 ```
 [hadoop@localhost ~]$ cd jdk1.8.0_181/
 [hadoop@localhost jdk1.8.0_181]$ pwd
@@ -17,22 +18,27 @@
 ```
 
 - 配置环境变量
+
 ```
 vim /etc/profile
 
 export JAVA_HOME=/home/hadoop/jdk1.8.0_181
 ```
 
+
 #### 5.解压安装hadoop
 - 解压tar -zxf hadoop-2.7.3.tar.gz
 - 查看路径:
+
 ```
 [hadoop@localhost jdk1.8.0_181]$ cd ~/hadoop-2.7.3
 [hadoop@localhost hadoop-2.7.3]$ pwd
 /home/hadoop/hadoop-2.7.3
 ```
 
+
 - 配置环境变量
+
 ```
 vim /etc/profile
 
@@ -42,6 +48,7 @@ PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 #### 6.配置hadoop中的5个文件<configuration>
 (1)hadoop-env.sh
+
 ```
 vim hadoop-env.sh
 
@@ -51,6 +58,7 @@ export JAVA_HOME=/home/hadoop/jdk1.8.0_181
 ```
 
 (2)core-site.xml
+
 ```
 vim core-site.xml
 
@@ -64,7 +72,8 @@ vim core-site.xml
     </property>
 ```
 
-(3)hdfs-site.xml: 
+(3)hdfs-site.xml:
+ 
 ```
 vim hdfs-site.xml 
 
@@ -79,6 +88,7 @@ vim hdfs-site.xml
 ```
 
 (4)yarn-site.xml
+
 ```
 vim yarn-site.xml 
 
@@ -94,6 +104,7 @@ vim yarn-site.xml
 ```
 
 (5)mapred-site.xml（cp mapred-site.xml.templete）
+
 ```
 cp mapred-site.xml.template mapred-site.xml
 vim mapred-site.xml
@@ -108,11 +119,13 @@ vim mapred-site.xml
 	- 看到Storage directory /home/hadoop/dfs/name has been successfully formatted.
 	- 说明格式化HDFS
 #### 8.启动HADOOP服务
+
 ```
 start-all.sh
 ```
 
 输入jps，连jps有6个说明你成功了
+
 ```
 [hadoop@localhost hadoop]$ jps
 3728 NameNode
@@ -122,7 +135,9 @@ start-all.sh
 4588 Jps
 4174 ResourceManager
 ```
+
 #### 9.关闭hadoop服务
+
 ```
 Stop-all.sh
 ```
