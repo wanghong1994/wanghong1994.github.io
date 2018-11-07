@@ -17,7 +17,7 @@
 这段逻辑及形成的切片规划描述文件，由FileInputFormat实现类的getSplits()方法完成，其过程如下图：
 ![image.png](https://upload-images.jianshu.io/upload_images/14466054-449a5a3fa1e4b792.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-# mapreduce的shuffle机制（map阶段处理的数据如何传递给reduce阶段）
+#### mapreduce的shuffle机制（map阶段处理的数据如何传递给reduce阶段）
 就是将maptask输出的处理结果数据，分发给reducetask，并在分发的过程中，
 对数据按key进行了分区和排序。
 - 1、分区partition
@@ -31,4 +31,5 @@
 - 5、reducetask根据自己的分区号，去各个maptask机器上取相应的结果分区数据
 - 6、reducetask会取到同一个分区的来自不同maptask的结果文件，reducetask会将这些文件再进行合并（归并排序）
 - 7、合并成大文件后，shuffle的过程也就结束了，后面进入reducetask的逻辑运算过程（从文件中取出一个一个的键值对group，调用用户自定义的reduce()方法）
+
 ![image.png](https://upload-images.jianshu.io/upload_images/14466054-a4f64ce6c5d4290e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
