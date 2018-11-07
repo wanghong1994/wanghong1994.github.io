@@ -13,5 +13,7 @@
 	- [hadoop second day study](https://wanghong1994.github.io/hadoopstudy/hadoop-secondday-study)
 	- [hadoop third day study](https://wanghong1994.github.io/hadoopstudy/hadoop-thirdday-study)
 	- [hadoop-windows-settings](https://wanghong1994.github.io/hadoopstudy/hadoop-window-settings)
+	- [MR程序运行流程](https://wanghong1994.github.io/hadoopstudy/MR程序运行流程)
+	- [yarn](https://wanghong1994.github.io/hadoopstudy/yarn-study)
 ## hello world
-![wanghong](https://upload-images.jianshu.io/upload_images/14466054-45eba05cdfd45232.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![F213302221935A974B07477EF2DC0193.jpg](https://upload-images.jianshu.io/upload_images/14466054-27476b2b0cf34742.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
