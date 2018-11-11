@@ -1,4 +1,4 @@
-# 欢迎访问我的博客
+﻿# 欢迎访问我的博客
 ## 点击下面的链接将进入对应博客
 - git
 	- [github blog bulid(just a picture)](https://wanghong1994.github.io/git/blog)
@@ -14,6 +14,9 @@
 	- [hadoop third day study](https://wanghong1994.github.io/hadoopstudy/hadoop-thirdday-study)
 	- [hadoop-windows-settings](https://wanghong1994.github.io/hadoopstudy/hadoop-window-settings)
 	- [MR程序运行流程](https://wanghong1994.github.io/hadoopstudy/MR程序运行流程)
-	- [yarn](https://wanghong1994.github.io/hadoopstudy/yarn-study)
+	- [yarn运行流程](https://wanghong1994.github.io/hadoopstudy/yarn-study)
+	- [Partitioner分区的实现](https://wanghong1994.github.io/hadoopstudy/Partitioner分区的实现)
+	- [MapReduce实现Join算法](https://wanghong1994.github.io/hadoopstudy/Join算法实现)
+	- [分组功能GroupingComparator的实现](https://wanghong1994.github.io/hadoopstudy/分组功能GroupingComparator)
 ## hello world
 ![F213302221935A974B07477EF2DC0193.jpg](https://upload-images.jianshu.io/upload_images/14466054-27476b2b0cf34742.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
