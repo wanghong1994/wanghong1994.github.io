@@ -1,28 +1,28 @@
-# Partitioner·ÖÇøµÄÊµÏÖ
+ï»¿# Partitioneråˆ†åŒºçš„å®žçŽ°
 
-#### Ê¹ÓÃ·ÖÇøµÄ²½Öè
+#### ä½¿ç”¨åˆ†åŒºçš„æ­¥éª¤
 
-- 1.ÉèÖÃjob.setPartitionerClass
-- 2.´´½¨·ÖÇøÀà£¬¼Ì³ÐpartitionerÀà
-- 3.¸ù¾Ý×Ô¼ºÒµÎñÂß¼­£¬Í¨¹ýkey£¬value£¬countµÄ²Ù×÷
+- 1.è®¾ç½®job.setPartitionerClass
+- 2.åˆ›å»ºåˆ†åŒºç±»ï¼Œç»§æ‰¿partitionerç±»
+- 3.æ ¹æ®è‡ªå·±ä¸šåŠ¡é€»è¾‘ï¼Œé€šè¿‡keyï¼Œvalueï¼Œcountçš„æ“ä½œ
 
-#### Êµ¼ÊÐèÇó
-´ÓlogÖÐ»ñÈ¡ÊÖ»úºÅ£¬ÉÏÐÐÁ÷Á¿£¬ÏÂÐÐÁ÷Á¿£¬×ÜÁ÷Á¿¡£
-reduceÖ®ºóÊä³öµÄ½á¹ûÒªÊÖ»úºÅ£¬Á÷Á¿¶ÔÏó£¨ÉÏÐÐÁ÷Á¿£¬ÏÂÐÐÁ÷Á¿£¬×ÜÁ÷Á¿£©
+#### å®žé™…éœ€æ±‚
+ä»Žlogä¸­èŽ·å–æ‰‹æœºå·ï¼Œä¸Šè¡Œæµé‡ï¼Œä¸‹è¡Œæµé‡ï¼Œæ€»æµé‡ã€‚
+reduceä¹‹åŽè¾“å‡ºçš„ç»“æžœè¦æ‰‹æœºå·ï¼Œæµé‡å¯¹è±¡ï¼ˆä¸Šè¡Œæµé‡ï¼Œä¸‹è¡Œæµé‡ï¼Œæ€»æµé‡ï¼‰
 
-#### ·ÖÎö
+#### åˆ†æž
 
-ÒªÊ¹ÓÃ×Ô¶¨ÒåµÄÀàÐÍ×÷ÎªÊä³ö
-- 1.Òª¸ù¾ÝÎÒÃÇµÄÊý¾Ý½øÐÐ½¨Ä££¨´´½¨ÊµÌåÀà£©
-- 2.mapperÐÎ²ÎÔõÃ´Ð´£¬map()·½·¨ÖÐÔõÃ´¶ÔÊý¾Ý½øÐÐÇÐ¸îÉ¸Ñ¡
-	½«ÎÒÃÇµÄÊý¾Ý·ÅÈë×Ô¶¨ÒåµÄbeanÖÐ£¬ÏëºÃ½«beanÒÔkey£¬»¹ÊÇvalue½øÐÐÊä³ö
-- 3.mapµÄ½á¹û×îÖÕÒªÐ´Èë´ÅÅÌÖÐ£¬ËùÓÐÎÒÃÇ×Ô¶¨ÒåµÄbeanÒªÖ§³ÖÐòÁÐ»¯
-	SerializableÊÇjavaÌá¹©µÄÖØÁ¿¼¶ÐòÁÐ»¯ hadoop¸ü½¨ÒéÓÃWritableComparableÀ´ÊµÏÖÐòÁÐ»¯ºÍ·´ÐòÁÐ»¯
-	ÕâÊ±ºòÓÐwrite£¨£©Ð´ÈëÎÄ¼þºÍreadfields£¨£©´ÓÎÄ¼þÖÐ¶ÁÈ¡µÄ·½·¨ÐèÒªÎÒÃÇÊµÏÖ
-	·ñÔòÔÚreduce½×¶ÎÊÇµÃ²»µ½Êý¾ÝµÄ£¬¶øÇÒÒª×¢ÒâµÄÒ»µãÊÇreadfields()·½·¨ÖÐµ÷ÓÃµÄread·½·¨
-	µÄÊ±ºòÒ»¶¨Òª°´ÕÕÐ´ÈëµÄË³Ðò½øÐÐ¶ÁÈ¡ ¶ÔÎÒÃÇµÄÊôÐÔÖµ½øÐÐ¸³Öµ£¬·ñÔò»á´íÂÒ
-- 4.reduceµ±ÖÐÒª×¢ÒâÐÎ²ÎºÍÊä³öÎ»ÖÃ£¬ÒÔ¼°ÔÚdriverÇø	¶ÔÓ¦ºÃÎÒÃÇreduceÒªÊä³öµÄÀàÐÍ	
+è¦ä½¿ç”¨è‡ªå®šä¹‰çš„ç±»åž‹ä½œä¸ºè¾“å‡º
+- 1.è¦æ ¹æ®æˆ‘ä»¬çš„æ•°æ®è¿›è¡Œå»ºæ¨¡ï¼ˆåˆ›å»ºå®žä½“ç±»ï¼‰
+- 2.mapperå½¢å‚æ€Žä¹ˆå†™ï¼Œmap()æ–¹æ³•ä¸­æ€Žä¹ˆå¯¹æ•°æ®è¿›è¡Œåˆ‡å‰²ç­›é€‰
+	å°†æˆ‘ä»¬çš„æ•°æ®æ”¾å…¥è‡ªå®šä¹‰çš„beanä¸­ï¼Œæƒ³å¥½å°†beanä»¥keyï¼Œè¿˜æ˜¯valueè¿›è¡Œè¾“å‡º
+- 3.mapçš„ç»“æžœæœ€ç»ˆè¦å†™å…¥ç£ç›˜ä¸­ï¼Œæ‰€æœ‰æˆ‘ä»¬è‡ªå®šä¹‰çš„beanè¦æ”¯æŒåºåˆ—åŒ–
+	Serializableæ˜¯javaæä¾›çš„é‡é‡çº§åºåˆ—åŒ– hadoopæ›´å»ºè®®ç”¨WritableComparableæ¥å®žçŽ°åºåˆ—åŒ–å’Œååºåˆ—åŒ–
+	è¿™æ—¶å€™æœ‰writeï¼ˆï¼‰å†™å…¥æ–‡ä»¶å’Œreadfieldsï¼ˆï¼‰ä»Žæ–‡ä»¶ä¸­è¯»å–çš„æ–¹æ³•éœ€è¦æˆ‘ä»¬å®žçŽ°
+	å¦åˆ™åœ¨reduceé˜¶æ®µæ˜¯å¾—ä¸åˆ°æ•°æ®çš„ï¼Œè€Œä¸”è¦æ³¨æ„çš„ä¸€ç‚¹æ˜¯readfields()æ–¹æ³•ä¸­è°ƒç”¨çš„readæ–¹æ³•
+	çš„æ—¶å€™ä¸€å®šè¦æŒ‰ç…§å†™å…¥çš„é¡ºåºè¿›è¡Œè¯»å– å¯¹æˆ‘ä»¬çš„å±žæ€§å€¼è¿›è¡Œèµ‹å€¼ï¼Œå¦åˆ™ä¼šé”™ä¹±
+- 4.reduceå½“ä¸­è¦æ³¨æ„å½¢å‚å’Œè¾“å‡ºä½ç½®ï¼Œä»¥åŠåœ¨driveråŒº	å¯¹åº”å¥½æˆ‘ä»¬reduceè¦è¾“å‡ºçš„ç±»åž‹	
 	job.setOutputKeyClass(Text.class);
 	job.setOutputValueClass(StreamBean.class);
-- 5.µ±ÎÒÃÇ´¦ÀíºÃºó£¬ÎÒÃÇreduceºóµÄ½á¹û¾Í¿ÉÒÔÊä³öµ½ÎÒÃÇÖ¸¶¨µÄÎ»ÖÃÁË
-	µ«ÊÇÒª×¢Òâ×Ô¶¨ÒåbeanµÄtostring£¨£©·½·¨µÄÖØÐ´£¬·ñÔòÊä³öÒ²²»»áÊÇÎÒÃÇÏëÒªµÄ
+- 5.å½“æˆ‘ä»¬å¤„ç†å¥½åŽï¼Œæˆ‘ä»¬reduceåŽçš„ç»“æžœå°±å¯ä»¥è¾“å‡ºåˆ°æˆ‘ä»¬æŒ‡å®šçš„ä½ç½®äº†
+	ä½†æ˜¯è¦æ³¨æ„è‡ªå®šä¹‰beançš„tostringï¼ˆï¼‰æ–¹æ³•çš„é‡å†™ï¼Œå¦åˆ™è¾“å‡ºä¹Ÿä¸ä¼šæ˜¯æˆ‘ä»¬æƒ³è¦çš„
