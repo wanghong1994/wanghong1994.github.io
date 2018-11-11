@@ -4,11 +4,11 @@
  * 1.文件格式要注意，否则有乱码
  * 2.创建一个接受完整数据的bean（既能存放order信息，又能存放goods）
  * 3.在map端接受不同文件的数据，根据是哪个文件向完整的bean中设置对应信息，没有的要设置默认值，不能为null，否则会造成空指针异常
- * 	这时候map的工作就结束了<goodsid,bean>要注意序列化
+  	这时候map的工作就结束了<goodsid,bean>要注意序列化
  * 4.这时候因为map端输出的key是goodsid所以传入的reduce数据已经帮我们合并了   <goodsid,[orderbean1,orderbean2,goodsbean]>
- * 	要将迭代器中的数据进行拆分成：goodsbean 与 [orderbean1,orderbean2]
- * 	我们只需要对orderbean的集合进行循环，将orderbean缺少的商品信息  通过goodbean进行补全 ，这样就得到了我们想要的完整的join之后的数据了，我们就可以输出了。
- * 	因为我们要使用的数据来自迭代器，所以要拿出来使用要进行深拷贝
+  	要将迭代器中的数据进行拆分成：goodsbean 与 [orderbean1,orderbean2]
+  	我们只需要对orderbean的集合进行循环，将orderbean缺少的商品信息  通过goodbean进行补全 ，这样就得到了我们想要的完整的join之后的数据了，我们就可以输出了。
+  	因为我们要使用的数据来自迭代器，所以要拿出来使用要进行深拷贝
  
  缺点：这种方式中，join的操作是在reduce阶段完成，reduce端的处理压力太大，map节点的运算负载则很低，资源利用率不高，且在reduce阶段极易产生数据倾斜
  
