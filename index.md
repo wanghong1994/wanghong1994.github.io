@@ -18,5 +18,7 @@
 	- [Partitioner分区的实现](https://wanghong1994.github.io/hadoopstudy/Partitioner分区的实现)
 	- [MapReduce实现Join算法](https://wanghong1994.github.io/hadoopstudy/Join算法实现)
 	- [分组功能GroupingComparator的实现](https://wanghong1994.github.io/hadoopstudy/分组功能GroupingComparator)
+- hive
+	- [Hive的配置安装](https://wanghong1994.github.io/hive/hive的配置安装)
 ## hello world
 ![F213302221935A974B07477EF2DC0193.jpg](https://upload-images.jianshu.io/upload_images/14466054-27476b2b0cf34742.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
