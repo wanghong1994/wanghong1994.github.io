@@ -18,6 +18,7 @@
 	- [Partitioner分区的实现](https://wanghong1994.github.io/hadoopstudy/Partitioner分区的实现)
 	- [MapReduce实现Join算法](https://wanghong1994.github.io/hadoopstudy/Join算法实现)
 	- [分组功能GroupingComparator的实现](https://wanghong1994.github.io/hadoopstudy/分组功能GroupingComparator)
+	- [自定义inputformat和outputformat](https://wanghong1994.github.io/hadoopstudy/自定义inputformat和outputformat)
 - hive
 	- [Hive的配置安装](https://wanghong1994.github.io/hive/hive的配置安装)
 ## hello world
