@@ -17,7 +17,7 @@
 	- EXTERNAL 关键字可以让用户创建一个外部表，在建表的同时指定一个指向实际数据的 路径（LOCATION），Hive 创建内部表时，会将数据移动到数据仓库指向的路径；若创建 外部表，仅记录数据所在的路径，不对数据的位置做任何改变。在删除表的时候，内部 表的元数据和数据会被一起删除，而外部表只删除元数据，不删除数据（经典面试问题）
 	- PARTITIONED 在 Hive Select查询中一般会扫描整个表内容，会消耗很多时间做没必要的工作。有时候只需要扫描表中关心的一部分数据，因此建表时引入了partition概念。表可以拥有一个或者多个分区，每个分区以文件夹的形式单独存在表文件夹的目录下，分区是以字段的形式在表结构中存在，通过desc table命令可以查看到字段存在，但是该字段不存放实际的数据内容，仅仅是分区的表示。分区建表分为2种，一种是单分区，也就是说在表文件夹目录下只有一级文件夹目录。另外一种是多分区，表文件夹下出现 多文件夹嵌套模式
 	- ROW FORMAT 	确定表的具体列的数据
-	- STORED AS SEQUENCEFILE|TEXTFILE|RCFILE 如果文件数据是纯文本，可以使用 STORED AS TEXTFILE。如果数据需要压缩，使用 STORED AS SEQUENCEFILE
+	- STORED AS SEQUENCEFILE/TEXTFILE/RCFILE 如果文件数据是纯文本，可以使用 STORED AS TEXTFILE。如果数据需要压缩，使用 STORED AS SEQUENCEFILE
 	- CLUSTERED BY 对于每一个表（table）或者分区，Hive可以进一步组织成桶，也就是说桶是更为 细粒度的数据范围划分。Hive也是针对某一列进行桶的组织。Hive采用对列值哈希，然后除以桶的个数求余的方式决定该条记录存放在哪个桶当中。把表（或者分区）组织成桶（Bucket）有两个理由：
 		获得更高的查询处理效率,使取样（sampling）更高效
 	- LOCATION 指定数据文件存放的hdfs目录
