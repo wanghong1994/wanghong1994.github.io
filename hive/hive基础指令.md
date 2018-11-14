@@ -61,8 +61,8 @@
 - 删除分区
 	alter table mytable3 drop if exists partition(sex='unknown');
 
-- Insert 插入数据
-	插入一条数据
+#### Insert 插入数据
+- 插入一条数据
 	insert into table student_mdf values('1','zhangsan');
 - 注意
 	动态分区默认情况下是没有开启的。开启后，默认是以”严格“模式执行的，在这种模式下要求至少有一列分区字段是静态的。这有助于阻止因设计错误导致查询产生大量的分区。但是此处我们不需要静态分区字段，估将其设为 nonstrict
