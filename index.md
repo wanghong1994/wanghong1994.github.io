@@ -21,5 +21,7 @@
 	- [自定义inputformat和outputformat](https://wanghong1994.github.io/hadoopstudy/自定义inputformat和outputformat)
 - hive
 	- [Hive的配置安装](https://wanghong1994.github.io/hive/hive的配置安装)
+	- [Hive基础指令](https://wanghong1994.github.io/hive/hive基础指令)
+	- [内部表、外部表和分区表](https://wanghong1994.github.io/hive/内部表、外部表和分区表)
 ## hello world
 ![F213302221935A974B07477EF2DC0193.jpg](https://upload-images.jianshu.io/upload_images/14466054-27476b2b0cf34742.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
